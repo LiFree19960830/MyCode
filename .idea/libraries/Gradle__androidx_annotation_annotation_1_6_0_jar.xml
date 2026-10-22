@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.annotation:annotation:1.6.0@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation/1.6.0/b94fe605ea8ff0f68f3feab065ae0b7d67860964/annotation-1.6.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation/1.6.0/e86e963ceb76b44ab1ace2eed2aa5307c0e5db87/annotation-1.6.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

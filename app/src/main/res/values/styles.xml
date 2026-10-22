@@ -1,0 +1,164 @@
+<resources>
+
+    <style name="TranslucentTheme" parent="Theme.AppCompat.Light.NoActionBar"></style>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="font_14_2f3b52">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black_ff2f3b52</item>
+    </style>
+
+    <style name="font_14_1F8EFA">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/selection_color</item>
+    </style>
+
+    <style name="font_16_2f3b52_bold">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black_ff2f3b52</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="divider_1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/gray_2670889e</item>
+    </style>
+
+    <style name="divider_1_ECEFF1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#ECEFF1</item>
+    </style>
+
+    <style name="Theme_Transparent" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="tab">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#37474F</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="param_setting_txt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#455A64</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="param_setting_img">
+        <item name="android:layout_width">14dp</item>
+        <item name="android:layout_height">14dp</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="param_setting_arrow">
+        <item name="android:layout_width">7dp</item>
+        <item name="android:layout_height">13dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:background">@mipmap/icon_arrow_right</item>
+    </style>
+
+
+    <style name="bat_param_val">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#455A64</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="blue_line_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/button_txt_color</item>
+        <item name="android:background">@drawable/blue_btn_line_bg</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="blue_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:background">@drawable/blue_btn_bg</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="download_img">
+        <item name="android:layout_width">18dp</item>
+        <item name="android:layout_height">18dp</item>
+        <item name="android:src">@mipmap/icon_start</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="download_txt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#B0BEC5</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="download_divider">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:background">#ECEFF1</item>
+    </style>
+
+    <style name="realtime_txt">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1.5</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#37474F</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="realtime_val">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#37474F</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:text">--</item>
+    </style>
+    <style name="realtime_val1">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#37474F</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:text">--</item>
+    </style>
+</resources>

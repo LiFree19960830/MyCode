@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--widget_date_picker.xml-->
+<!--注意修改页面自定义控件的包名-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+    <com.huasu.bess4c48.view.wheelview.WheelView
+        android:id="@+id/wheelViewYear"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:paddingLeft="5dp"/>
+
+    <com.huasu.bess4c48.view.wheelview.WheelView
+        android:id="@+id/wheelViewMonth"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"/>
+    <com.huasu.bess4c48.view.wheelview.WheelView
+        android:id="@+id/wheelViewDay"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:visibility="gone"/>
+    <com.huasu.bess4c48.view.wheelview.WheelView
+        android:id="@+id/wheelViewHour"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:visibility="gone"/>
+    <com.huasu.bess4c48.view.wheelview.WheelView
+        android:id="@+id/wheelViewMinute"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:visibility="gone"/>
+    <com.huasu.bess4c48.view.wheelview.WheelView
+        android:id="@+id/wheelViewSecond"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:visibility="gone"/>
+
+</LinearLayout>

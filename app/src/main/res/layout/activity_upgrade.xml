@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/page_bg">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.lihang.ShadowLayout
+        app:hl_cornerRadius="4dp"
+        app:hl_shadowColor="@color/hl_shadowColor"
+        app:hl_shadowLimit="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/rvInfo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <ImageView
+                    android:id="@+id/iv2"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_juxing" />
+
+                <TextView
+                    android:id="@+id/tv2"
+                    style="@style/tab"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iv2"
+                    android:text="@string/bms_upgrade_setting_title"/>
+
+                <View
+                    android:id="@+id/view"
+                    style="@style/divider_1_ECEFF1"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rlBluetooth"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_item_height"
+                android:paddingLeft="@dimen/list_item_padding_left"
+                android:paddingRight="@dimen/list_item_padding_right">
+
+                <TextView
+                    android:id="@+id/tvFile"
+                    style="@style/param_setting_txt"
+                    android:hint="@string/select_upgrade_file" />
+
+                <Button
+                    android:id="@+id/btnSelect"
+                    style="@style/blue_line_button"
+                    android:layout_toLeftOf="@+id/bUpgrade"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:paddingRight="3dp"
+                    android:paddingLeft="3dp"
+                    android:text="@string/select_file_btn" />
+                <Button
+                    android:id="@+id/bUpgrade"
+                    style="@style/blue_button"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="3dp"
+                    android:paddingLeft="3dp"
+                    android:text="@string/upgrade_data_btn" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </com.lihang.ShadowLayout>
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="24dp">
+
+        <Button
+            android:id="@+id/btnRead"
+            style="@style/blue_line_button"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:text="@string/read_parameters" />
+
+        <Button
+            android:id="@+id/btnRestore"
+            style="@style/blue_line_button"
+            android:layout_height="32dp"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:text="@string/restore_parameters" />
+    </LinearLayout>
+</RelativeLayout>

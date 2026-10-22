@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/page_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/llBottom"/>
+
+        <com.lihang.ShadowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="2dp"
+            app:hl_cornerRadius="4dp"
+            app:hl_shadowColor="@color/hl_shadowColor"
+            app:hl_shadowLimit="5dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/list_item_padding_left"
+                android:paddingRight="@dimen/list_item_padding_right">
+
+                <RelativeLayout
+                    android:id="@+id/rlVolt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/list_item_height">
+
+                    <TextView
+                        style="@style/param_setting_txt"
+                        android:text="@string/voltage_category" />
+
+                    <ImageView style="@style/param_setting_arrow" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/divider_1_ECEFF1" />
+
+                <RelativeLayout
+                    android:id="@+id/rlCurrent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/list_item_height">
+
+                    <TextView
+                        style="@style/param_setting_txt"
+                        android:text="@string/current_category" />
+
+                    <ImageView style="@style/param_setting_arrow" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/divider_1_ECEFF1"/>
+
+                <RelativeLayout
+                    android:id="@+id/rlTemp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/list_item_height">
+
+                    <TextView
+                        style="@style/param_setting_txt"
+                        android:text="@string/temperature_category" />
+
+                    <ImageView style="@style/param_setting_arrow" />
+                </RelativeLayout>
+            </LinearLayout>
+        </com.lihang.ShadowLayout>
+    </LinearLayout>
+</ScrollView>

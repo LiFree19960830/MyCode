@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BtgSwitchBar">
+        <attr name="switch_text" format="string" />
+        <attr name="switch_icon" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="Tab">
+        <attr name="tab_text" format="string" />
+    </declare-styleable>
+    <declare-styleable name="switch_layout">
+        <attr name="layoutWidth" format="integer" />
+        <attr name="layoutHeight" format="integer" />
+        <attr name="textWidth" format="integer" />
+        <attr name="textHeight" format="integer" />
+    </declare-styleable>
+    <string-array name="export_columns">
+        <item>@string/field_update_time</item>
+        <item>@string/field_event</item>
+        <item>@string/field_fault_status</item>
+        <item>@string/field_total_volt</item>
+        <item>@string/field_total_curr</item>
+        <item>@string/field_soc</item>
+        <item>@string/field_soh</item>
+        <item>@string/field_mos_temp</item>
+        <item>@string/field_ambient_temp</item>
+        <item>@string/field_max_cell_volt</item>
+        <item>@string/field_min_cell_volt</item>
+        <item>@string/field_max_volt_diff</item>
+        <item>@string/field_cell_temp_1</item>
+        <item>@string/field_cell_temp_2</item>
+        <item>@string/field_cell_temp_3</item>
+        <item>@string/field_cell_temp_4</item>
+        <item>@string/field_cell_temp_5</item>
+        <item>@string/field_cell_temp_6</item>
+        <item>@string/field_cell_temp_7</item>
+        <item>@string/field_cell_temp_8</item>
+        <item>@string/field_cell_volt_1</item>
+        <item>@string/field_cell_volt_2</item>
+        <item>@string/field_cell_volt_3</item>
+        <item>@string/field_cell_volt_4</item>
+        <item>@string/field_cell_volt_5</item>
+        <item>@string/field_cell_volt_6</item>
+        <item>@string/field_cell_volt_7</item>
+        <item>@string/field_cell_volt_8</item>
+        <item>@string/field_cell_volt_9</item>
+        <item>@string/field_cell_volt_10</item>
+        <item>@string/field_cell_volt_11</item>
+        <item>@string/field_cell_volt_12</item>
+        <item>@string/field_cell_volt_13</item>
+        <item>@string/field_cell_volt_14</item>
+        <item>@string/field_cell_volt_15</item>
+        <item>@string/field_cell_volt_16</item>
+        <item>@string/field_charge_mos</item>
+        <item>@string/field_dischg_mos</item>
+        <item>@string/field_heating_mos</item>
+        <item>@string/field_current_limit_mos</item>
+        <item>@string/field_balance_status</item>
+        <item>@string/field_charge_dischg_status</item>
+        <item>@string/field_dischg_cycle_count</item>
+        <item>@string/field_charge_total_cap</item>
+        <item>@string/field_dischg_total_cap</item>
+        <item>@string/field_io_pin_status</item>
+        <item>@string/field_request_charge_current</item>
+        <item>@string/field_alarm_register_value</item>
+        <item>@string/field_protection_register_value</item>
+        <item>@string/field_extra_alarm_protection_register_value</item>
+        <item>@string/field_fault_summary</item>
+        <item>@string/field_crc_check_result</item>
+    </string-array>
+
+    <string-array name="export_columns_field">
+        <item>getUpdateTime</item>
+        <item>getEvent</item>
+        <item>getFaultStatus</item>
+        <item>getTotalV</item>
+        <item>getTotalC</item>
+        <item>getSoc</item>
+        <item>getSoh</item>
+        <item>getMosT</item>
+        <item>getAmbientT</item>
+        <item>getMaxCellV</item>
+        <item>getMinCellV</item>
+        <item>getMaxVoltDiff</item>
+        <item>getCellT1</item>
+        <item>getCellT2</item>
+        <item>getCellT3</item>
+        <item>getCellT4</item>
+        <item>getCellT5</item>
+        <item>getCellT6</item>
+        <item>getCellT7</item>
+        <item>getCellT8</item>
+        <item>getCellV1</item>
+        <item>getCellV2</item>
+        <item>getCellV3</item>
+        <item>getCellV4</item>
+        <item>getCellV5</item>
+        <item>getCellV6</item>
+        <item>getCellV7</item>
+        <item>getCellV8</item>
+        <item>getCellV9</item>
+        <item>getCellV10</item>
+        <item>getCellV11</item>
+        <item>getCellV12</item>
+        <item>getCellV13</item>
+        <item>getCellV14</item>
+        <item>getCellV15</item>
+        <item>getCellV16</item>
+        <item>getCM</item>
+        <item>getDCM</item>
+        <item>getHM</item>
+        <item>getCLM</item>
+        <item>getBS</item>
+        <item>getCDS</item>
+        <item>getDCC</item>
+        <item>getCTC</item>
+        <item>getDTC</item>
+        <item>getIPS</item>
+        <item>getRCC</item>
+        <item>getARV</item>
+        <item>getPRV</item>
+        <item>getEAPRV</item>
+        <item>getFS</item>
+        <item>getCCR</item>
+    </string-array>
+</resources>

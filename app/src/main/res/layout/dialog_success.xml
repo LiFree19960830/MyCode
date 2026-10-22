@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:layout_centerInParent="true"
+    android:layout_width="wrap_content"
+    android:layout_height="44dp"
+    android:background="@drawable/toast_bg">
+    <ImageView
+        android:id="@+id/ivToastIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@mipmap/ic_success"/>
+    <TextView
+        android:id="@+id/tvToastText"
+        android:layout_marginLeft="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="连接成功"
+        android:textColor="#fff"
+        android:textSize="14sp"/>
+</LinearLayout>

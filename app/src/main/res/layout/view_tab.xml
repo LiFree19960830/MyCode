@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="45dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_juxing" />
+
+    <TextView
+        android:id="@+id/tv"
+        style="@style/tab"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv" />
+
+    <TextView
+        android:id="@+id/tvCount"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/tv"
+        android:background="@drawable/circle_corner_f8cc14"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/colorWhite"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn"
+        style="@style/blue_line_button"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:text="@string/read_parameters"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/llControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/storage_control"
+            android:textColor="#37474F"
+            android:textSize="13sp" />
+
+        <com.huasu.bess4c48.view.SwitchLayout
+            android:id="@+id/ivSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layoutHeight="60"
+            app:layoutWidth="120"
+            app:textHeight="50"
+            app:textWidth="50" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        style="@style/divider_1_ECEFF1"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
+

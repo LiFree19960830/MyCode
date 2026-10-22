@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:paddingRight="50dp">
+
+    <TextView
+        android:id="@+id/tvCellName"
+        android:layout_width="45dp"
+        android:layout_height="36dp"
+        android:gravity="center_vertical"
+        android:text="cell01"
+        android:textColor="@color/select_color_yellow"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tvCellVoltage"
+        android:layout_width="50dp"
+        android:layout_height="36dp"
+        android:layout_toRightOf="@+id/tvCellName"
+        android:gravity="center_vertical"
+        android:text="--"
+        android:textColor="@color/select_color_yellow"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tvCellVoltage"
+        android:src="@mipmap/ic__equilibrium" />
+</RelativeLayout>
+

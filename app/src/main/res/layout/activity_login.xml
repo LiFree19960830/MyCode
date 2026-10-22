@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <!--  顶部  -->
+    <ImageView
+        android:layout_marginTop="100dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@mipmap/ic_login_logo"/>
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#4C4948"
+        android:textStyle="bold"
+        android:text="@string/app_name"
+        android:gravity="center"/>
+
+    <!--  表单部分  -->
+    <RelativeLayout
+        android:layout_marginTop="44dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/editTextLoginName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@null"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textColor="#37474F"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:maxLength="11"
+            android:singleLine="true"
+            android:hint="@string/login_page_user_name"/>
+        <View
+            android:id="@+id/user_name_line"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="24dp"
+            android:layout_below="@+id/editTextLoginName"
+            style="@style/divider_1_ECEFF1" />
+        <EditText
+            android:layout_below="@+id/user_name_line"
+            android:id="@+id/editTextLoginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:background="@null"
+            android:textCursorDrawable="@drawable/cursor"
+            android:inputType="textPassword"
+            android:textColor="#37474F"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:maxLength="32"
+            android:singleLine="true"
+            android:hint="@string/login_page_user_pass"/>
+        <View
+            android:id="@+id/password_line"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="4dp"
+            android:layout_below="@+id/editTextLoginPassword"
+            style="@style/divider_1_ECEFF1"/>
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_below="@+id/password_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            android:textColor="#F03D30"
+            android:text=""/>
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_below="@+id/tvResult"
+            android:background="@drawable/blue_btn_bg"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:text="@string/login_page_login"
+            android:textAllCaps="false"
+            android:layout_gravity="center_horizontal"/>
+        <ImageView
+            android:id="@+id/ivPasswordSwitch"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/user_name_line"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="8dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@mipmap/ic_eye_close"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

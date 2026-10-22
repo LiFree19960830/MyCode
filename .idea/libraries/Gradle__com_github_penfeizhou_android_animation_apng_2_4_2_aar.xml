@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.penfeizhou.android.animation:apng:2.4.2@aar">
+    <CLASSES>
+      <root url="jar://F:/Android/.gradle/caches/transforms-2/files-2.1/df4b30861693aeee75957274846f93f5/apng-2.4.2/jars/classes.jar!/" />
+      <root url="file://F:/Android/.gradle/caches/transforms-2/files-2.1/df4b30861693aeee75957274846f93f5/apng-2.4.2/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://F:/Android/.gradle/caches/modules-2/files-2.1/com.github.penfeizhou.android.animation/apng/2.4.2/7d7da3116989d747070394030f1d1fda6004fe58/apng-2.4.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

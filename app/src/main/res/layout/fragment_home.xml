@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--动效图-->
+    <com.lihang.ShadowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:hl_cornerRadius="4dp"
+        app:hl_shadowColor="@color/hl_shadowColor"
+        app:hl_shadowLimit="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@mipmap/ic_home_bg">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvProgress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#37474F"
+                    android:textSize="45sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" %"
+                    android:textColor="#37474F"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <com.huasu.bess4c48.view.CircleProgressView
+                android:id="@+id/circleProgress"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+                android:visibility="gone"/>
+            <!-- 右上角-电池组状态小图标 -->
+            <com.lihang.ShadowLayout
+                android:id="@+id/slChargeState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="28dp"
+                android:layout_marginRight="28dp"
+                android:visibility="gone"
+                app:hl_cornerRadius="4dp"
+                app:hl_shadowHidden="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:background="#c7f3eb"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@mipmap/ic_bt" />
+
+                    <TextView
+                        android:id="@+id/tvBtgState"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:gravity="center_vertical"
+                        android:text="--"
+                        android:textColor="#ff00ce80"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </com.lihang.ShadowLayout>
+
+            <!-- 左下角-报警小图标 -->
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="32dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="@mipmap/ic_gaojing"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvAlarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/check_alarm"
+                    android:layout_marginLeft="35dp"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/ivHomeGif"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"/>
+        </RelativeLayout>
+    </com.lihang.ShadowLayout>
+
+    <!-- 蓝牙连接   -->
+    <com.lihang.ShadowLayout
+        android:id="@+id/slConnectBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        app:hl_cornerRadius="4dp"
+        app:hl_shadowColor="@color/hl_shadowColor"
+        app:hl_shadowLimit="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="8dp"
+                android:background="@mipmap/ic_lanya_green" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bluetooth_connect"
+                android:textColor="#4C4948"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </com.lihang.ShadowLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llbtgInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <!--总电压/总电流-->
+        <com.lihang.ShadowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:hl_cornerRadius="4dp"
+            app:hl_shadowColor="@color/hl_shadowColor"
+            app:hl_shadowLimit="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="6dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.huasu.bess4c48.view.BtgSwitchBar
+                    android:id="@+id/sbTotalV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    app:switch_icon="@mipmap/icon_total_volt"
+                    app:switch_text="@string/total_voltage" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:background="#ECEFF1" />
+
+                <com.huasu.bess4c48.view.BtgSwitchBar
+                    android:id="@+id/sbTotalI"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    app:switch_icon="@mipmap/icon_total_current"
+                    app:switch_text="@string/total_current" />
+            </LinearLayout>
+        </com.lihang.ShadowLayout>
+        <!-- 功率/循环次数 -->
+        <com.lihang.ShadowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:hl_cornerRadius="4dp"
+            app:hl_shadowColor="@color/hl_shadowColor"
+            app:hl_shadowLimit="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="6dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.huasu.bess4c48.view.BtgSwitchBar
+                    android:id="@+id/sbPower"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    app:switch_icon="@mipmap/icon_power"
+                    app:switch_text="@string/power" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:background="#ECEFF1" />
+
+                <com.huasu.bess4c48.view.BtgSwitchBar
+                    android:id="@+id/sbCycCount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    app:switch_icon="@mipmap/icon_cycle_cirles"
+                    app:switch_text="@string/cycle_count" />
+            </LinearLayout>
+        </com.lihang.ShadowLayout>
+        <!-- 电芯温度/平均电压 -->
+        <com.lihang.ShadowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:hl_cornerRadius="4dp"
+            app:hl_shadowColor="@color/hl_shadowColor"
+            app:hl_shadowLimit="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="6dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.huasu.bess4c48.view.BtgSwitchBar
+                    android:id="@+id/sbBatT"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    app:switch_icon="@mipmap/icon_bat_temp"
+                    app:switch_text="@string/cell_temperature" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:background="#ECEFF1" />
+
+                <com.huasu.bess4c48.view.BtgSwitchBar
+                    android:id="@+id/sbAvgV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    app:switch_icon="@mipmap/icon_avg_volt"
+                    app:switch_text="@string/average_voltage" />
+            </LinearLayout>
+        </com.lihang.ShadowLayout>
+        <!-- 最高电压/最低电压 -->
+        <com.lihang.ShadowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:hl_cornerRadius="4dp"
+            app:hl_shadowColor="@color/hl_shadowColor"
+            app:hl_shadowLimit="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="8dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.huasu.bess4c48.view.BtgSwitchBar
+                    android:id="@+id/sbMaxV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    app:switch_icon="@mipmap/icon_max_volt"
+                    app:switch_text="@string/max_voltage" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:background="#ECEFF1" />
+
+                <com.huasu.bess4c48.view.BtgSwitchBar
+                    android:id="@+id/sbMinV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    app:switch_icon="@mipmap/icon_min_volt"
+                    app:switch_text="@string/min_voltage" />
+            </LinearLayout>
+        </com.lihang.ShadowLayout>
+    </LinearLayout>
+
+</LinearLayout>

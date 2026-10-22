@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <!-- 软件版本/保护板时间 -->
+        <com.lihang.ShadowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:hl_cornerRadius="4dp"
+            app:hl_shadowColor="@color/hl_shadowColor"
+            app:hl_shadowLimit="5dp">
+            <!--保护板时间-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="18dp">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@mipmap/ic_time" />
+
+                <TextView
+                    style="@style/realtime_txt"
+                    android:layout_weight="1"
+                    android:paddingLeft="13dp"
+                    android:text="@string/guard_board_time"/>
+
+                <TextView
+                    android:id="@+id/tvGuardBoardTime"
+                    android:layout_weight="2"
+                    style="@style/realtime_val" />
+            </LinearLayout>
+        </com.lihang.ShadowLayout>
+
+        <!-- 数据总览 -->
+        <com.lihang.ShadowLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:hl_cornerRadius="4dp"
+            app:hl_shadowColor="@color/hl_shadowColor"
+            app:hl_shadowLimit="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+                <!--标题-->
+                <com.huasu.bess4c48.view.Tab
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    app:tab_text="@string/data_overview" />
+                <!--总压-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp">
+
+                    <TextView
+                        style="@style/realtime_txt"
+                        android:text="@string/total_voltage_with_unit"/>
+
+                    <TextView
+                        android:id="@+id/tvTotalVoltage"
+                        style="@style/realtime_val" />
+                </LinearLayout>
+                <!--实时电流（A）-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="#F8FBFE"
+                    android:orientation="horizontal"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp">
+
+                    <TextView
+                        style="@style/realtime_txt"
+                        android:text="@string/current_with_unit" />
+
+                    <TextView
+                        android:id="@+id/tvCurrent"
+                        style="@style/realtime_val" />
+                </LinearLayout>
+                <!-- soc -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp">
+
+                    <TextView
+                        style="@style/realtime_txt"
+                        android:text="@string/soc_with_unit" />
+
+                    <TextView
+                        android:id="@+id/tvSoc"
+                        style="@style/realtime_val" />
+                </LinearLayout>
+                <!-- soh -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="#F8FBFE"
+                    android:orientation="horizontal"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp">
+
+                    <TextView
+                        style="@style/realtime_txt"
+                        android:text="@string/soh_with_unit" />
+
+                    <TextView
+                        android:id="@+id/tvSoh"
+                        style="@style/realtime_val" />
+                </LinearLayout>
+                <!-- 电池容量 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp">
+
+                    <TextView
+                        style="@style/realtime_txt"
+                        android:text="@string/capacity_with_unit" />
+
+                    <TextView
+                        android:id="@+id/tvCapacity"
+                        style="@style/realtime_val" />
+                </LinearLayout>
+                <!-- 最低单体电压（V） -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="#F8FBFE"
+                    android:orientation="horizontal"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp">
+
+                    <TextView
+                        style="@style/realtime_txt"
+                        android:text="@string/lowest_bt_voltage_with_unit" />
+
+                    <TextView
+                        android:id="@+id/tvLowestBtVoltage"
+                        style="@style/realtime_val" />
+                </LinearLayout>
+                <!-- 最高单体电压（V） -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp">
+
+                    <TextView
+                        style="@style/realtime_txt"
+                        android:text="@string/highest_bt_voltage_with_unit" />
+
+                    <TextView
+                        android:id="@+id/tvHighBtVoltage"
+                        style="@style/realtime_val" />
+                </LinearLayout>
+                <!-- 电池电压极差（V） -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="#F8FBFE"
+                    android:orientation="horizontal"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp">
+
+                    <TextView
+                        style="@style/realtime_txt"
+                        android:text="@string/bt_voltage_range_with_unit"/>
+
+                    <TextView
+                        android:id="@+id/tvVoltageRange"
+                        style="@style/realtime_val" />
+                </LinearLayout>
+                <!-- 充电循环次数 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp">
+
+                    <TextView
+                        style="@style/realtime_txt"
+                        android:text="@string/charge_cycle_index"/>
+
+                    <TextView
+                        android:id="@+id/tvChargeCycleIndex"
+                        style="@style/realtime_val" />
+                </LinearLayout>
+                <!-- 放电循环次数 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="#F8FBFE"
+                    android:orientation="horizontal"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp">
+
+                    <TextView
+                        style="@style/realtime_txt"
+                        android:text="@string/discharge_cycle_index" />
+
+                    <TextView
+                        android:id="@+id/tvDisChargeCycleIndex"
+                        style="@style/realtime_val" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.lihang.ShadowLayout>
+
+        <!-- 电芯电压 -->
+        <com.lihang.ShadowLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:hl_cornerRadius="4dp"
+            app:hl_shadowColor="@color/hl_shadowColor"
+            app:hl_shadowLimit="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+                <!--标题-->
+                <com.huasu.bess4c48.view.Tab
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    app:tab_text="@string/cell_voltage_with_unit" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvCellVoltage"
+                    android:layout_width="match_parent"
+                    android:layout_height="290dp"
+                    android:visibility="gone" />
+
+                <com.huasu.bess4c48.view.TableNoData
+                    android:id="@+id/tableNoDataCellVoltage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </com.lihang.ShadowLayout>
+
+        <!-- 温度情况 -->
+        <com.lihang.ShadowLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:hl_cornerRadius="4dp"
+            app:hl_shadowColor="@color/hl_shadowColor"
+            app:hl_shadowLimit="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+                <!--标题-->
+                <com.huasu.bess4c48.view.Tab
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    app:tab_text="@string/temperature_info" />
+                <!--环境温度/mos温度-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp">
+
+                    <TextView
+                        style="@style/realtime_txt"
+                        android:text="@string/environment_temperature_with_unit" />
+
+                    <TextView
+                        android:id="@+id/tvEnviromentTemperature"
+                        style="@style/realtime_val1" />
+
+                    <TextView
+                        style="@style/realtime_txt"
+                        android:text="@string/mos_temperature_with_unit" />
+
+                    <TextView
+                        android:id="@+id/tvMosTemperature"
+                        style="@style/realtime_val1" />
+                </LinearLayout>
+
+                <!--T1/T2-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="#F8FBFE"
+                    android:orientation="horizontal"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp">
+
+                    <TextView
+                        style="@style/realtime_txt"
+                        android:text="T1（℃）" />
+
+                    <TextView
+                        android:id="@+id/tvT1Temperature"
+                        style="@style/realtime_val1" />
+
+                    <TextView
+                        style="@style/realtime_txt"
+                        android:text="T2（℃）"/>
+
+                    <TextView
+                        android:id="@+id/tvT2Temperature"
+                        style="@style/realtime_val1"
+                        android:layout_width="0dp" />
+                </LinearLayout>
+
+                <!--T3/T4-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp">
+
+                    <TextView
+                        style="@style/realtime_txt"
+                        android:text="T3（℃）" />
+
+                    <TextView
+                        android:id="@+id/tvT3Temperature"
+                        style="@style/realtime_val1" />
+
+                    <TextView
+                        style="@style/realtime_txt"
+                        android:text="T4（℃）" />
+
+                    <TextView
+                        android:id="@+id/tvT4Temperature"
+                        style="@style/realtime_val1" />
+                </LinearLayout>
+
+                <!--T5/T6-->
+                <LinearLayout
+                    android:id="@+id/ll5"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/realtime_txt"
+                        android:text="T5（℃）" />
+
+                    <TextView
+                        android:id="@+id/tvT5Temperature"
+                        style="@style/realtime_val1" />
+
+                    <TextView
+                        style="@style/realtime_txt"
+                        android:text="T6（℃）" />
+
+                    <TextView
+                        android:id="@+id/tvT6Temperature"
+                        style="@style/realtime_val1" />
+
+                </LinearLayout>
+                <!--T7/T8-->
+                <LinearLayout
+                    android:id="@+id/ll6"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/realtime_txt"
+                        android:text="T7（℃）" />
+
+                    <TextView
+                        android:id="@+id/tvT7Temperature"
+                        style="@style/realtime_val1" />
+
+                    <TextView
+                        style="@style/realtime_txt"
+                        android:text="T8（℃）" />
+
+                    <TextView
+                        android:id="@+id/tvT8Temperature"
+                        style="@style/realtime_val1" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.lihang.ShadowLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

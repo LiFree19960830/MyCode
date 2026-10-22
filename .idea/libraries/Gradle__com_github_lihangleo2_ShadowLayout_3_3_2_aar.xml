@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.lihangleo2:ShadowLayout:3.3.2@aar">
+    <CLASSES>
+      <root url="jar://F:/Android/.gradle/caches/transforms-2/files-2.1/429463511ef6d2e4bc7aafe2b4ef336e/ShadowLayout-3.3.2/jars/classes.jar!/" />
+      <root url="file://F:/Android/.gradle/caches/transforms-2/files-2.1/429463511ef6d2e4bc7aafe2b4ef336e/ShadowLayout-3.3.2/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://F:/Android/.gradle/caches/modules-2/files-2.1/com.github.lihangleo2/ShadowLayout/3.3.2/3245503a5ef3a70b4be89eb6724073031b4d908f/ShadowLayout-3.3.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

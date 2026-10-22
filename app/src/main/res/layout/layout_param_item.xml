@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:paddingLeft="@dimen/list_item_padding_left"
+    android:paddingRight="@dimen/list_item_padding_right">
+    <ImageView
+        android:id="@+id/iv"
+        style="@style/param_setting_img" />
+    <TextView
+        android:id="@+id/tv"
+        style="@style/param_setting_txt"
+        android:layout_toRightOf="@+id/iv"
+        android:text="@string/soc" />
+
+    <TextView
+        android:id="@+id/tvVal"
+        style="@style/bat_param_val"
+        android:text="000" />
+    <View
+        android:id="@+id/view"
+        style="@style/divider_1_ECEFF1"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

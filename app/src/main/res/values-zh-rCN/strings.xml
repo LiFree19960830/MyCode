@@ -1,0 +1,664 @@
+<resources>
+    <string name="app_name">家庭储能系统</string>
+    <string name="welcome_to_app">欢迎登陆!</string>
+    <string name="loading">加载中...</string>
+    <string name="no_data">暂无数据</string>
+    <string name="cancel">取消</string>
+    <string name="sure">确定</string>
+    <string name="submit">提交</string>
+    <string name="table_no_data">暂无数据</string>
+
+    <!--  toast提示框的信息  -->
+    <string name="toast_bluetooth_scanning">蓝牙扫描中...</string>
+    <string name="toast_no_bluetooth_device">没有找到蓝牙设备!</string>
+    <string name="toast_loading">加载中...</string>
+    <string name="toast_bluetooth_disconnecting">蓝牙断开中...</string>
+    <string name="toast_scan_success">扫描完成!</string>
+    <string name="toast_scan_failed">扫描失败!</string>
+    <string name="toast_already_connected">已连接到当前蓝牙!</string>
+    <string name="toast_connect_success">连接成功!</string>
+    <string name="toast_connect_failed">连接失败!</string>
+    <string name="toast_disconnect_success">蓝牙已断开!</string>
+    <string name="toast_disconnect_failed">断开失败!</string>
+    <string name="toast_save_success">保存成功!</string>
+    <string name="toast_save_failed">保存失败!</string>
+    <string name="toast_bluetooth_disconnected">蓝牙连接已断开!</string>
+    <string name="toast_board_connect_exception">保护板连接异常!</string>
+    <string name="toast_please_open_bluetooth">请打开蓝牙!</string>
+    <string name="toast_press_to_exit">再按一次退出应用!</string>
+
+    <!-- 菜单 -->
+    <string name="menu_home">我的首页</string>
+    <string name="menu_realtime_data">实时数据</string>
+    <string name="menu_realtime_alarm">实时告警</string>
+    <string name="menu_system_setting">系统设置</string>
+    <string name="menu_param_setting">参数设置</string>
+
+    <string name="menu_home_short">我的首页</string>
+    <string name="menu_realtime_data_short">实时数据</string>
+    <string name="menu_realtime_alarm_short">实时告警</string>
+    <string name="menu_system_setting_short">系统设置</string>
+    <string name="menu_param_setting_short">参数设置</string>
+
+    <!-- 首页 -->
+    <string name="discharge_mos">放电MOS</string>
+    <string name="charge_mos">充电MOS</string>
+    <string name="heater">加热膜</string>
+    <string name="charge_limit">充电限流</string>
+    <string name="bt_balance">电池均衡</string>
+    <string name="full_charge_portect">满充保护</string>
+    <string name="on">开</string>
+    <string name="off">关</string>
+    <string name="check_alarm">查看告警</string>
+    <string name="charge_state_code_0">静置</string>
+    <string name="charge_state_code_1">放电</string>
+    <string name="charge_state_code_2">充电</string>
+    <string name="charge_state_code_3">未充未放</string>
+    <string name="charge_state_code_4">加热</string>
+    <string name="charge_state_code_5">浮充</string>
+    <string name="bluetooth_connect_tips">请先连接蓝牙</string>
+    <string name="bluetooth_connect">蓝牙连接</string>
+    <string name="bluetooth_select">请选择蓝牙</string>
+    <string name="bluetooth_connect_success">连接成功</string>
+    <string name="bluetooth_connect_failed">连接失败</string>
+    <string name="communication_exception">通讯异常</string>
+    <string name="total_voltage">总电压（V）</string>
+    <string name="total_current">总电流（A）</string>
+    <string name="power">功率（W）</string>
+    <string name="cycle_count">循环次数</string>
+    <string name="cell_temperature">电芯温度（℃）</string>
+    <string name="average_voltage">平均电压（V）</string>
+    <string name="max_voltage">最高电压（V）</string>
+    <string name="min_voltage">最低电压（V）</string>
+
+
+    <!-- 实时数据 -->
+    <string name="software_version">软件版本</string>
+    <string name="guard_board_time">保护板时间</string>
+    <string name="data_overview">数据总览</string>
+    <string name="total_voltage_with_unit">总压（V）</string>
+    <string name="current_with_unit">实时电流（A）</string>
+    <string name="soc_with_unit">SOC（%）</string>
+    <string name="soh_with_unit">SOH（%）</string>
+    <string name="capacity_with_unit">电池容量（AH）</string>
+    <string name="lowest_bt_voltage_with_unit">最低单体电压（V）</string>
+    <string name="highest_bt_voltage_with_unit">最高单体电压（V）</string>
+    <string name="bt_voltage_range_with_unit">电池电压极差（mV）</string>
+    <string name="cycle_index">循环次数</string>
+    <string name="charge_cycle_index">充电循环次数</string>
+    <string name="discharge_cycle_index">放电循环次数</string>
+    <string name="cell_voltage_with_unit">电芯电压（V）</string>
+    <string name="cell">cell</string>
+    <string name="temperature_info">温度情况</string>
+    <string name="environment_temperature_with_unit">环境温度（℃）</string>
+    <string name="mos_temperature_with_unit">PCB温度（℃）</string>
+
+    <!-- 实时告警 -->
+    <string name="table_no">序号</string>
+    <string name="alarm_info">告警信息</string>
+    <string name="alarm_event">告警事件</string>
+    <string name="protect_info">保护信息</string>
+    <string name="protect_param">保护参数</string>
+
+    <!-- 系统设置 -->
+    <string name="history_connected_device">已连接过的设备</string>
+    <string name="bluetooth_device">蓝牙设备</string>
+    <string name="scan_bluetooth_device">扫描蓝牙设备</string>
+    <string name="disconnect">断开</string>
+    <string name="disconnected">已断开</string>
+    <string name="connect">连接</string>
+    <string name="bluetooth_connecting">蓝牙连接中...</string>
+    <string name="bluetooth_connect_exception">连接异常</string>
+    <string name="save">保存</string>
+    <string name="edit">修改</string>
+    <string name="delete">删除</string>
+    <string name="save_success">保存成功!</string>
+    <string name="delete_success">删除成功!</string>
+    <string name="hint_please_input">请输入...</string>
+
+    <!--告警信息-->
+    <string name="alarm_code_0">单体电压高告警</string>
+    <string name="alarm_code_1">单体电压低告警</string>
+    <string name="alarm_code_2">充电温度高告警</string>
+    <string name="alarm_code_3">充电温度低告警</string>
+    <string name="alarm_code_4">放电温度高告警</string>
+    <string name="alarm_code_5">放电温度低告警</string>
+    <string name="alarm_code_6">电压不均告警</string>
+    <string name="alarm_code_7">单体温度不均告警</string>
+    <string name="alarm_code_8">通讯故障告警</string>
+    <string name="alarm_code_9">组压高告警</string>
+    <string name="alarm_code_10">组压低告警</string>
+    <string name="alarm_code_11">充电电流大告警</string>
+    <string name="alarm_code_12">放电电流大告警</string>
+    <string name="alarm_code_13">环境温度高告警</string>
+    <string name="alarm_code_14">环境温度低告警</string>
+    <string name="alarm_code_15">SOC低告警</string>
+    <string name="alarm_code_16">SOH低告警</string>
+    <string name="alarm_code_17">PCB温度高告警</string>
+    <string name="alarm_code_18">短路告警</string>
+    <string name="alarm_code_19">反接告警</string>
+    <string name="alarm_code_20">断线告警</string>
+    <string name="alarm_code_21">硬件告警</string>
+    <string name="alarm_code_22">充电mos故障告警</string>
+    <string name="alarm_code_23">放电mos故障告警</string>
+    <string name="alarm_code_24">放电二级告警</string>
+    <string name="alarm_code_25">充电二级告警</string>
+    <string name="alarm_code_26">消防设备启动告警</string>
+    <string name="alarm_code_27"></string>
+    <string name="alarm_code_28">电芯失效告警</string>
+    <string name="alarm_code_29">满充告警</string>
+    <string name="alarm_code_30"></string>
+    <string name="alarm_code_31"></string>
+    <string name="alarm_code_10086">单体温度高告警</string>
+    <string name="alarm_code_10087">单体温度低告警</string>
+
+    <!--保护信息-->
+    <string name="protect_code_0">单体电压高保护</string>
+    <string name="protect_code_1">单体电压低保护</string>
+    <string name="protect_code_2">充电温度高保护</string>
+    <string name="protect_code_3">充电温度低保护</string>
+    <string name="protect_code_4">放电温度高保护</string>
+    <string name="protect_code_5">放电温度低保护</string>
+    <string name="protect_code_6">电压不均保护</string>
+    <string name="protect_code_7">单体温度不均保护</string>
+    <string name="protect_code_8">采样通讯故障保护</string>
+    <string name="protect_code_9">组压高保护</string>
+    <string name="protect_code_10">组压低保护</string>
+    <string name="protect_code_11">充电电流大保护</string>
+    <string name="protect_code_12">放电电流大保护</string>
+    <string name="protect_code_13">环境温度高保护</string>
+    <string name="protect_code_14">环境温度低保护</string>
+    <string name="protect_code_15">SOC低保护</string>
+    <string name="protect_code_16">SOH低保护</string>
+    <string name="protect_code_17">PCB温度高保护</string>
+    <string name="protect_code_18">短路保护</string>
+    <string name="protect_code_19">反接保护</string>
+    <string name="protect_code_20">断线保护</string>
+    <string name="protect_code_21">硬件保护</string>
+    <string name="protect_code_22">充电mos故障保护</string>
+    <string name="protect_code_23">放电mos故障保护</string>
+    <string name="protect_code_24">放电过流二级保护</string>
+    <string name="protect_code_25">充电过流二级保护</string>
+    <string name="protect_code_26">消防设备启动保护</string>
+    <string name="protect_code_27"></string>
+    <string name="protect_code_28">电芯失效保护</string>
+    <string name="protect_code_29">满充保护</string>
+    <string name="protect_code_30"></string>
+    <string name="protect_code_31"></string>
+    <string name="protect_code_10086">单体温度高保护</string>
+    <string name="protect_code_10087">单体温度低保护</string>
+
+    <!--登录页-->
+    <string name="login_page_user_name">用户名</string>
+    <string name="login_page_user_pass">密码</string>
+    <string name="login_page_login">登录</string>
+    <string name="nameIsNull">请输入用户名!</string>
+    <string name="PassIsNull">请输入密码!</string>
+    <string name="login_fail">登录失败!</string>
+
+    <!--参数设置-->
+    <string name="battery_parameters">电池参数</string>
+    <string name="function_parameters">功能参数</string>
+    <string name="pcs_parameters">PCS参数</string>
+
+    <!-- 电池参数页面相关字符串 -->
+    <string name="battery_info">电池信息</string>
+    <string name="read_parameters">读取参数</string>
+    <string name="restore_parameters">恢复默认参数</string>
+    <string name="battery_type">电池类型</string>
+    <string name="battery_type_20">纳电</string>
+    <string name="battery_type_32">磷酸铁锂</string>
+    <string name="battery_type_36">三元锂</string>
+    <string name="battery_series_count">电池串数</string>
+    <string name="battery_capacity">电池容量</string>
+    <string name="temperature_count">温度个数</string>
+    <string name="soc">SOC</string>
+    <string name="set_parameters">设置参数</string>
+    <string name="soh">SOH</string>
+    <string name="voltage_category">电压类</string>
+    <string name="current_category">电流类</string>
+    <string name="temperature_category">温度类</string>
+    <string name="reading_params">参数读取中...</string>
+    <string name="setting_params">参数设置中...</string>
+    <string name="restore_params">参数恢复中...</string>
+    <string name="finish_reading_params">参数读取完成</string>
+    <string name="finish_setting_params_failed">参数设置失败</string>
+    <string name="finish_setting_params_successed">参数设置成功</string>
+    <string name="finish_restore_params_failed">参数恢复失败</string>
+    <string name="finish_restore_params_successed">参数恢复成功</string>
+
+    <!--电压参数-->
+    <!-- 单体电压低模块 -->
+
+    <string name="toast_input_right_val">请输入正确的参数!</string>
+    <string name="cell_voltage_low">单体电压低</string>
+    <string name="protection_value">保护值</string>
+    <string name="protection_recovery_value">保护恢复值</string>
+    <string name="trigger_time">触发时间(S)</string>
+    <string name="setting_parameter">设置参数</string>
+    <!-- 单体电压高模块 -->
+    <string name="cell_voltage_high">单体电压高</string>
+    <!-- 总压低模块 -->
+    <string name="total_voltage_low">总压低</string>
+    <!-- 总压高模块 -->
+    <string name="total_voltage_high">总压高</string>
+    <!-- 单体电压不均模块 -->
+    <string name="cell_voltage_uneven">单体电压不均</string>
+    <!-- 电芯失效模块 -->
+    <string name="cell_failure">电芯失效</string>
+
+    <!--电流参数-->
+    <string name="discharge_over_current">放电电流</string>
+    <string name="charge_over_current">充电电流</string>
+
+    <!--温度参数-->
+    <string name="discharge_temperature_low">放电温度低</string>
+    <string name="discharge_temperature_high">放电温度高</string>
+    <string name="charge_temperature_low">充电温度低</string>
+    <string name="charge_temperature_high">充电温度高</string>
+    <string name="cell_temperature_uneven">单体温度不均</string>
+    <string name="environment_temperature_high">环境温度高</string>
+    <string name="environment_temperature_low">环境温度低</string>
+    <string name="mos_high_temperature">PCB高温</string>
+
+    <!--PCS参数-->
+    <string name="protocol_selection_label">协议选择</string>
+    <string name="can_protocol_option">CAN协议</string>
+    <string name="rs485_protocol_option">RS485协议</string>
+    <!-- 操作提示文本 -->
+    <string name="select_protocol_type">选择协议类型</string>
+    <string name="select_protocol_name">选择协议名称</string>
+
+    <string name="protocol_rs485_0">无</string>
+    <string name="protocol_rs485_1">商宇协议</string>
+    <string name="protocol_rs485_2">硕日协议</string>
+    <string name="protocol_rs485_3">派能协议</string>
+    <string name="protocol_rs485_4">古瑞瓦特协议</string>
+    <string name="protocol_rs485_5">鹏城协议</string>
+    <string name="protocol_rs485_6">固德威协议</string>
+    <string name="protocol_rs485_7">拓邦协议</string>
+    <string name="protocol_rs485_8">首航协议</string>
+    <string name="protocol_rs485_9">安驰协议</string>
+    <string name="protocol_rs485_10">菲利斯协议</string>
+    <string name="protocol_rs485_11">索尔斯协议</string>
+    <string name="protocol_rs485_12">雷凌协议</string>
+    <string name="protocol_rs485_13">湖南昇辉协议</string>
+    <string name="protocol_rs485_14">艾罗协议</string>
+    <string name="protocol_rs485_15">硕日V1.4协议</string>
+
+    <string name="protocol_can_0">无</string>
+    <string name="protocol_can_1">古瑞瓦特CAN协议</string>
+    <string name="protocol_can_2">派能CAN协议</string>
+    <string name="protocol_can_3">鹏城CAN协议</string>
+    <string name="protocol_can_4">固德威CAN协议</string>
+    <string name="protocol_can_5">迈格瑞能CAN协议</string>
+    <string name="protocol_can_6">首航CAN协议</string>
+    <string name="protocol_can_7">索瑞德CAN协议</string>
+    <string name="protocol_can_8">德业CAN协议</string>
+    <string name="protocol_can_9">长风CAN协议</string>
+    <string name="protocol_can_10">威通CAN协议</string>
+    <string name="protocol_can_11">美世乐CAN协议</string>
+    <string name="protocol_can_12">艾思玛CAN协议</string>
+    <string name="protocol_can_13">古瑞瓦特并离网CAN协议</string>
+    <string name="protocol_can_14">TBB拓保CAN协议</string>
+    <string name="protocol_can_15">英威腾CAN协议</string>
+    <string name="protocol_can_16">艾伏协议</string>
+    <string name="protocol_can_17">博纳达协议</string>
+    <string name="protocol_can_18">爱士惟协议</string>
+    <string name="protocol_can_19">AC24协议</string>
+    <string name="protocol_can_20">科耀协议</string>
+    <string name="protocol_can_21">锦浪协议</string>
+    <string name="protocol_can_22">盛弘协议</string>
+    <string name="protocol_can_23">东方日出协议</string>
+    <string name="protocol_can_24">艾罗协议</string>
+    <string name="protocol_can_25">众欣绿能协议</string>
+    <string name="protocol_can_26">德业3.0协议</string>
+    <string name="protocol_can_27">CiA418协议</string>
+
+    <!--功能参数-->
+    <!-- 均衡设置模块 -->
+    <string name="balance_setting_label">均衡</string>
+    <string name="balance_voltage_start">均衡开启电压</string>
+    <string name="balance_voltage_diff_start">均衡启动压差</string>
+    <string name="balance_voltage_diff_end">均衡结束压差</string>
+    <!-- MOS设置模块 -->
+    <string name="mos_setting_label">MOS状态</string>
+    <string name="mos_current_limit">限流板MOS</string>
+    <string name="mos_heating">加热MOS</string>
+    <string name="open_mos_tops">是否导通%1$s?</string>
+    <string name="close_mos_tops">是否断开%1$s?</string>
+    <string name="close_storage_control">是否关闭强控？</string>
+    <string name="open_storage_control">是否打开强控？</string>
+    <string name="open_storage_control_tips">请先打开强控！</string>
+    <!-- 自动休眠设置 -->
+    <string name="auto_sleep_setting_label">自动休眠</string>
+    <string name="auto_sleep_time">自动休眠时间</string>
+    <!-- 操作按钮文本 -->
+    <string name="btn_system_sleep">系统休眠</string>
+    <string name="btn_system_restart">系统重启</string>
+    <string name="storage_control">强控开关：</string>
+    <!-- 功能名称 -->
+    <string name="cdc_manage">充放电管理</string>
+    <string name="request_charge_current">请求充电电流</string>
+    <string name="request_discharge_current">请求放电电流</string>
+    <string name="request_charge_voltage">请求充电电压</string>
+    <string name="charge_rate">充电倍率</string>
+    <string name="discharge_rate">放电倍率</string>
+
+    <!--系统设置-->
+    <string name="setting_language_switch">语言切换</string>
+    <string name="setting_device_management">设备管理</string>
+    <string name="setting_upgrade_management">升级管理</string>
+    <string name="setting_data_export">历史数据导出</string>
+    <string name="setting_battery_knowledge">电池知识</string>
+    <string name="setting_fault_inquiry">故障查询</string>
+    <string name="setting_language_select">选择语言</string>
+    <string name="setting_language_en">English</string>
+    <string name="setting_language_cn">简体中文</string>
+
+    <!--基础提示框-->
+    <string name="dialog_toast_title">系统提示</string>
+    <string name="restore_param_tips">是否确定恢复默认值？</string>
+
+    <!--历史数据导出-->
+    <string name="btn_export_record">导出</string>
+    <string name="export_file_path">导出路径：%1$s</string>
+    <string name="select_export_count">请选择导出条数</string>
+    <string name="search_data_count">正在查询历史记录总条数，请稍后。。。</string>
+    <string name="export_tips1">查询到的历史数据总条数为%1$s，小于当前要查询的%2$s条，只能导出%3$s条,确定要导出吗？</string>
+    <string name="export_tips2">确定要导出%1$s条记录吗？</string>
+    <string name="crc_result">通过</string>
+    <string name="crc_result_no">未通过</string>
+    <string name="export_tips3">历史数据已导出，是否跳转目录？</string>
+    <string name="export_tips4">历史数据导出失败！</string>
+    <string name="export_tips5">导出完成，文件存放路径：%1$s</string>
+    <!-- 导出流程状态 -->
+    <string name="status_read_start">读取开始</string>
+    <string name="status_read_complete">读取完成</string>
+    <string name="status_export_start">导出开始</string>
+    <string name="status_export_complete">导出完成</string>
+    <string name="all">全部</string>
+
+    <string name="field_update_time">更新时间</string>
+    <string name="field_event">事件</string>
+    <string name="field_fault_status">故障状态</string>
+
+    <!-- 核心电气参数字段 -->
+    <string name="field_total_volt">总电压（V）</string>
+    <string name="field_total_curr">总电流（A）</string>
+    <string name="field_soc">SOC（%）</string>
+    <string name="field_soh">SOH（%）</string>
+
+    <!-- 温度相关字段 -->
+    <string name="field_cell_temp_1">单体温度1（℃）</string>
+    <string name="field_cell_temp_2">单体温度2（℃）</string>
+    <string name="field_cell_temp_3">单体温度3（℃）</string>
+    <string name="field_cell_temp_4">单体温度4（℃）</string>
+    <string name="field_cell_temp_5">单体温度5（℃）</string>
+    <string name="field_cell_temp_6">单体温度6（℃）</string>
+    <string name="field_cell_temp_7">单体温度7（℃）</string>
+    <string name="field_cell_temp_8">单体温度8（℃）</string>
+    <string name="field_mos_temp">PCB温度（℃）</string>
+    <string name="field_ambient_temp">环境温度（℃）</string>
+
+    <!-- 单体电压相关字段 -->
+    <string name="field_max_cell_volt">最高单体电压（V）</string>
+    <string name="field_min_cell_volt">最低单体电压（V）</string>
+    <string name="field_max_volt_diff">最大压差（mV）</string>
+    <string name="field_cell_volt_1">单体电压1（V）</string>
+    <string name="field_cell_volt_2">单体电压2（V）</string>
+    <string name="field_cell_volt_3">单体电压3（V）</string>
+    <string name="field_cell_volt_4">单体电压4（V）</string>
+    <string name="field_cell_volt_5">单体电压5（V）</string>
+    <string name="field_cell_volt_6">单体电压6（V）</string>
+    <string name="field_cell_volt_7">单体电压7（V）</string>
+    <string name="field_cell_volt_8">单体电压8（V）</string>
+    <string name="field_cell_volt_9">单体电压9（V）</string>
+    <string name="field_cell_volt_10">单体电压10（V）</string>
+    <string name="field_cell_volt_11">单体电压11（V）</string>
+    <string name="field_cell_volt_12">单体电压12（V）</string>
+    <string name="field_cell_volt_13">单体电压13（V）</string>
+    <string name="field_cell_volt_14">单体电压14（V）</string>
+    <string name="field_cell_volt_15">单体电压15（V）</string>
+    <string name="field_cell_volt_16">单体电压16（V）</string>
+
+    <!-- MOS状态相关字段 -->
+    <string name="field_charge_mos">充电MOS</string>
+    <string name="field_dischg_mos">放电MOS</string>
+    <string name="field_heating_mos">加热MOS</string>
+    <string name="field_current_limit_mos">限流MOS</string>
+
+    <!-- 运行状态相关字段 -->
+    <string name="field_balance_status">均衡状态</string>
+    <string name="field_charge_dischg_status">充放电状态</string>
+    <string name="field_dischg_cycle_count">放电循环次数</string>
+    <string name="field_charge_total_cap">充电累计容量（AH）</string>
+    <string name="field_dischg_total_cap">放电累计容量（AH）</string>
+
+    <!-- 寄存器与状态相关字段 -->
+    <string name="field_io_pin_status">IO引脚状态</string>
+    <string name="field_request_charge_current">请求充电电流（A）</string>
+    <string name="field_alarm_register_value">告警寄存器值</string>
+    <string name="field_protection_register_value">保护寄存器值</string>
+    <string name="field_extra_alarm_protection_register_value">额外告警保护寄存器值</string>
+
+    <!-- 故障与校验相关字段 -->
+    <string name="field_fault_summary">故障汇总</string>
+    <string name="field_crc_check_result">CRC校验结果</string>
+
+    <!--事件以及告警-->
+    <!-- 单体电压相关故障 -->
+    <string name="clear_event">消除%1$s</string>
+    <string name="generate_event">产生%1$s</string>
+    <string name="event_1000">单体电压高告警</string>
+    <string name="event_1001">单体电压高保护</string>
+    <string name="event_1002">单体电压低告警</string>
+    <string name="event_1003">单体电压低保护</string>
+    <!-- 充电温度相关故障 -->
+    <string name="event_1004">充电温度高告警</string>
+    <string name="event_1005">充电温度高保护</string>
+    <string name="event_1006">充电温度低告警</string>
+    <string name="event_1007">充电温度低保护</string>
+    <!-- 放电温度相关故障 -->
+    <string name="event_1008">放电温度高告警</string>
+    <string name="event_1009">放电温度高保护</string>
+    <string name="event_1010">放电温度低告警</string>
+    <string name="event_1011">放电温度低保护</string>
+    <!-- 电压/温度不均相关故障 -->
+    <string name="event_1012">电压不均告警</string>
+    <string name="event_1013">电压不均保护</string>
+    <string name="event_1014">单体温度不均告警</string>
+    <string name="event_1015">单体温度不均保护</string>
+    <!-- 组压相关故障 -->
+    <string name="event_1016">组压高告警</string>
+    <string name="event_1017">组压高保护</string>
+    <string name="event_1018">组压低告警</string>
+    <string name="event_1019">组压低保护</string>
+    <!-- 充放电电流相关故障 -->
+    <string name="event_1020">充电电流大告警</string>
+    <string name="event_1021">充电电流大保护</string>
+    <string name="event_1022">放电电流大告警</string>
+    <string name="event_1023">放电电流大保护</string>
+    <!-- 环境温度相关故障 -->
+    <string name="event_1024">环境温度高告警</string>
+    <string name="event_1025">环境温度高保护</string>
+    <string name="event_1026">环境温度低告警</string>
+    <string name="event_1027">环境温度低保护</string>
+    <!-- SOC/SOH相关故障 -->
+    <string name="event_1028">SOC低告警</string>
+    <string name="event_1029">SOC低保护</string>
+    <string name="event_1030">SOH低告警</string>
+    <string name="event_1031">SOH低保护</string>
+    <!-- MOS温度相关故障 -->
+    <string name="event_1032">PCB温度高告警</string>
+    <string name="event_1033">PCB温度高保护</string>
+    <!-- 通信/硬件故障 -->
+    <string name="event_1034">采样通信故障</string>
+    <string name="event_1035">短路保护</string>
+    <string name="event_1036">反接保护</string>
+    <string name="event_1037">断线保护</string>
+    <string name="event_1038">NTC故障</string>
+    <string name="event_1039">充电mos故障</string>
+    <string name="event_1040">放电mos故障</string>
+    <!-- 二级保护故障 -->
+    <string name="event_1041">放电2级保护</string>
+    <string name="event_1042">充电2级保护</string>
+    <!-- 消防/电芯相关故障 -->
+    <string name="event_1043">消防设备启动告警</string>
+    <string name="event_1046">电芯失效告警</string>
+    <string name="event_1047">电芯失效保护</string>
+    <!-- 硬件/存储/参数故障 -->
+    <string name="event_1048">NTC失效保护</string>
+    <string name="event_1049">EEPROM故障</string>
+    <string name="event_1050">FLASH故障</string>
+    <string name="event_1051">参数故障</string>
+    <string name="event_1052">限流MOS故障</string>
+    <string name="event_1053">满充保护</string>
+    <!-- 基础运行事件 -->
+    <string name="event_0">定时存储</string>
+    <string name="event_6000">电源重启</string>
+    <string name="event_6001">放电开始</string>
+    <string name="event_6002">放电结束</string>
+    <string name="event_6003">充电开始</string>
+    <string name="event_6004">充电结束</string>
+    <!-- 手动操作事件 -->
+    <string name="event_6005">手动修改SOC</string>
+    <string name="event_6006">参数恢复出厂</string>
+    <string name="event_6007">清除历史记录</string>
+    <string name="event_6008">手动修改系统时间</string>
+    <string name="event_6076">手动导通加热MOS</string>
+    <string name="event_6077">手动断开加热MOS</string>
+    <!-- 均衡功能事件 -->
+    <string name="event_6009">均衡功能开始</string>
+    <string name="event_6010">均衡功能结束</string>
+    <!-- 电芯状态事件 -->
+    <string name="event_6011">单体放光</string>
+    <string name="event_6012">单体满充</string>
+    <!-- MOS/光耦/限流板状态事件 -->
+    <string name="event_6013">充电mos闭合</string>
+    <string name="event_6014">充电mos断开</string>
+    <string name="event_6015">放电mos闭合</string>
+    <string name="event_6016">放电mos断开</string>
+    <string name="event_6017">光耦闭合</string>
+    <string name="event_6018">光耦断开</string>
+    <string name="event_6019">加热mos闭合</string>
+    <string name="event_6020">加热mos断开</string>
+    <string name="event_6021">限流板闭合</string>
+    <string name="event_6022">限流板断开</string>
+    <!-- 模式/休眠/唤醒事件 -->
+    <string name="event_6023">调试模式</string>
+    <string name="event_6024">进入休眠</string>
+    <string name="event_6033">普通休眠事件</string>
+    <string name="event_6034">欠压休眠</string>
+    <string name="event_6035">强制休眠模式(指令休眠)</string>
+    <string name="event_6046">弱电开关休眠</string>
+    <string name="event_6047">按键休眠</string>
+    <string name="event_6064">压差过大休眠</string>
+    <string name="event_6065">电芯失效休眠</string>
+    <string name="event_6066">插枪唤醒</string>
+    <string name="event_6067">插枪唤醒1</string>
+    <string name="event_6068">短路唤醒</string>
+    <string name="event_6069">通信唤醒</string>
+    <string name="event_6070">PTC断线唤醒</string>
+    <string name="event_6071">反接唤醒</string>
+    <string name="event_6072">消防唤醒</string>
+    <string name="event_6073">按键唤醒</string>
+    <string name="event_6074">弱电唤醒</string>
+    <string name="event_6075">欠压休眠定时唤醒</string>
+    <string name="event_6090">普通休眠定时唤醒</string>
+    <!-- 保护/故障事件 -->
+    <string name="event_6025">满充保护</string>
+    <string name="event_6026">加热MOS故障</string>
+    <string name="event_6027">三端保险丝熔断失败</string>
+    <string name="event_6028">三端保险丝熔断成功</string>
+    <string name="event_6029">脱扣器动作成功</string>
+    <string name="event_6030">脱扣器动作失败</string>
+    <string name="event_6031">脱扣器主动断开</string>
+    <string name="event_6032">脱扣主动闭合</string>
+    <string name="event_6036">短路锁定事件</string>
+    <string name="event_6037">充电过流锁定事件</string>
+    <string name="event_6038">放电过流锁定事件</string>
+    <string name="event_6039">放电过流二级锁定事件</string>
+    <string name="event_6040">内部调试事件</string>
+    <string name="event_6041">RTC错误事件</string>
+    <string name="event_6091">历史记录损坏</string>
+    <!-- 指令/校准事件 -->
+    <string name="event_6042">请求满充</string>
+    <string name="event_6043">请求校准SOH</string>
+    <string name="event_6044">恢复报警阈值与配置参数默认值</string>
+    <string name="event_6045">恢复运行存储参数默认值</string>
+    <!-- 重启/复位事件 -->
+    <string name="event_6050">指令重启</string>
+    <string name="event_6051">按键重启</string>
+    <string name="event_6060">内核复位</string>
+    <string name="event_6061">看门狗复位</string>
+    <string name="event_6062">下电复位</string>
+    <string name="event_6063">NRST引脚复位</string>
+    <!-- 加热MOS控制事件 -->
+    <string name="event_6078">满足不允许加热断开加热MOS</string>
+    <string name="event_6079">满足加热条件导通加热MOS</string>
+    <string name="event_6080">充电机功率不足断开加热MOS</string>
+    <string name="event_6081">加热到截止温度断开加热MOS</string>
+    <string name="event_6082">康信寄存器控制打开加热MOS</string>
+    <string name="event_6083">康信寄存器控制断开加热MOS</string>
+    <string name="event_6084">AC24协议控制打开加热MOS</string>
+    <string name="event_6085">AC24协议控制断开加热MOS</string>
+    <string name="event_6086">充电机优先充电断开加热MOS</string>
+    <string name="event_6087">进入正常分支断开加热MOS</string>
+    <string name="event_6088">低温强制打开加热MOS</string>
+    <string name="event_6089">取消强制加热断开加热MOS</string>
+    <string name="mos_status_1">导通</string>
+    <string name="mos_status_0">断开</string>
+    <string name="balance_status_0">关闭</string>
+    <string name="balance_status_1">打开</string>
+    <string name="alarm_status_1">有告警</string>
+    <string name="alarm_status_0">无告警</string>
+    <string name="proc_status_1">有保护</string>
+    <string name="proc_status_0">无保护</string>
+    <string name="charge_state_0">静置</string>
+    <string name="charge_state_1">放电</string>
+    <string name="charge_state_2">充电</string>
+    <string name="charge_state_3">未充未放</string>
+    <string name="charge_state_4">加热</string>
+    <string name="charge_state_5">浮充</string>
+
+    <!-- 版本信息相关 -->
+    <string name="app_version_title">APP版本</string>
+    <string name="program_version_title">程序版本</string>
+    <string name="hardware_version_title">硬件版本号</string>
+    <string name="project_code_title">项目编码</string>
+    <string name="boot_version_title">BOOT版本</string>
+    <string name="bms_sn_title">BMS SN</string>
+    <string name="communication_module_sn_title">通信模块SN</string>
+    <!-- 功能按钮相关 -->
+    <string name="bms_time_setting_title">BMS时间设置</string>
+    <string name="manage_bluetooth_device_title">管理蓝牙设备</string>
+
+    <string name="date_select">选择日期</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+    <string name="second">秒</string>
+    <string name="set_phone_time">是否重置为当前手机系统时间？</string>
+
+    <!-- 版本信息区域 -->
+    <string name="version_info_title">版本信息</string>
+    <!-- BMS信息项 -->
+    <string name="bms_communication_address_title">通信地址</string>
+    <!-- 升级设置区域 -->
+    <string name="bms_upgrade_setting_title">升级设置</string>
+    <string name="select_file_btn">选择文件</string>
+    <string name="upgrade_data_btn">升级程序</string>
+    <string name="select_upgrade_file">选择升级文件</string>
+    <string name="upgrade_fail_for_refuse">升级失败，应用程序拒绝升级</string>
+    <string name="upgrade_fail_for_big">升级失败，升级文件过大</string>
+    <string name="upgrade_fail_for_time">升级失败，超过失败次数</string>
+    <string name="upgrade_fail">升级失败</string>
+    <string name="upgrade_success">升级成功</string>
+    <string name="upgrade_tips">是否确定升级？</string>
+    <string name="upgrade_tips1">正在升级中，请稍后。。。</string>
+    <string name="upgrade_tips3">注意：在升级过程中，不能退出</string>
+    <string name="upgrade_tips2">升级完成，%1$s</string>
+</resources>

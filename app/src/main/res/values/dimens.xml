@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="table_item_height">56dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="toolbar_padding_top">0dp</dimen>
+    <dimen name="list_item_height">44dp</dimen>
+    <dimen name="list_item_padding_left">20dp</dimen>
+    <dimen name="list_item_padding_right">20dp</dimen>
+</resources>

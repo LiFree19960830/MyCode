@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000073">
+
+
+    <com.lihang.ShadowLayout
+        android:id="@+id/slGuide"
+        android:layout_marginTop="394dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:hl_cornerRadius="4dp"
+        app:hl_shadowColor="#2a000000"
+        app:hl_shadowLimit="5dp"
+        >
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#ffffff">
+            <ImageView
+                android:layout_marginRight="8dp"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@mipmap/ic_lanya_green"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#4C4948"
+                android:textSize="14sp"
+                android:text="@string/bluetooth_connect"/>
+        </LinearLayout>
+    </com.lihang.ShadowLayout>
+    <ImageView
+        android:id="@+id/ivGuide"
+        android:layout_width="236dp"
+        android:layout_height="165dp"
+        android:src="@mipmap/ic_guide_en" />
+</LinearLayout>

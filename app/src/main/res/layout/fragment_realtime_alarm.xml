@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <!-- 告警信息 -->
+    <com.lihang.ShadowLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        app:hl_cornerRadius="4dp"
+        app:hl_shadowColor="@color/hl_shadowColor"
+        app:hl_shadowLimit="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+            <!--标题-->
+            <com.huasu.bess4c48.view.Tab
+                android:id="@+id/tabAlm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:tab_text="@string/alarm_info" />
+
+            <!--列表-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewAlarmInfo"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <com.huasu.bess4c48.view.TableNoData
+                android:id="@+id/tableNoDataAlarmInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.lihang.ShadowLayout>
+
+    <!-- 保护信息 -->
+    <com.lihang.ShadowLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        app:hl_cornerRadius="4dp"
+        app:hl_shadowColor="@color/hl_shadowColor"
+        app:hl_shadowLimit="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+            <!--标题-->
+            <com.huasu.bess4c48.view.Tab
+                android:id="@+id/tabProtect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:tab_text="@string/protect_info" />
+
+
+            <!--列表-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewProtectInfo"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <com.huasu.bess4c48.view.TableNoData
+                android:id="@+id/tableNoDataProtect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.lihang.ShadowLayout>
+
+</LinearLayout>

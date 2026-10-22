@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.penfeizhou.android.animation:frameanimation:2.18.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f7a23c30f9dfa9e9b0e849d8fcbbb8c4/frameanimation-2.18.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f7a23c30f9dfa9e9b0e849d8fcbbb8c4/frameanimation-2.18.0/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.penfeizhou.android.animation/frameanimation/2.18.0/ec94fe805181802e3e2259a8591039e69bf499c9/frameanimation-2.18.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

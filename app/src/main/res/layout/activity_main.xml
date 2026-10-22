@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/page_bg"
+    android:orientation="vertical">
+    <!-- 标题栏 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/blue_276FE5">
+        <View
+            android:id="@+id/vStatusBg"
+            android:layout_width="match_parent"
+            android:background="@color/blue_276FE5"
+            android:layout_height="@dimen/toolbar_padding_top" />
+        <TextView
+            android:id="@+id/tvTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="#ffffff"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/ivTitleIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_toLeftOf="@+id/ivSetting"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/ic_deng"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/ivSetting"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="end"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@mipmap/icon_setting"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!--底部菜单栏-->
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/commonTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        app:tl_iconHeight="23dp"
+        app:tl_iconWidth="23dp"
+        app:tl_indicator_color="@color/blue_2C97DE"
+        app:tl_indicator_height="0dp"
+        app:tl_textSelectColor="@color/blue_2C97DE"
+        app:tl_textUnselectColor="#66000000"
+        app:tl_textsize="13sp"
+        app:tl_underline_color="#ffffff"
+        app:tl_underline_height="0dp" />
+</LinearLayout>

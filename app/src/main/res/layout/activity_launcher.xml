@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="0dp"
+    android:background="@drawable/launch_bg">
+
+    <View
+        android:id="@+id/vStatusBg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_padding_top"
+        android:background="@android:color/transparent" />
+    <!-- 欢迎登陆 -->
+    <LinearLayout
+        android:layout_marginTop="94dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:layout_marginRight="8dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@mipmap/ic_login_logo"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue_1179FD"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/welcome_to_app"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="22dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#37474F"
+        android:textSize="18sp"
+        android:text="@string/app_name"/>
+
+    <!--动效图-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+<!--        <pl.droidsonroids.gif.GifImageView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:src="@drawable/launch"-->
+<!--            android:scaleType="centerInside"-->
+<!--            />-->
+        <ImageView
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/ivLauncherGif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <!--底部信息-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginBottom="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <View
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#B9CBD2"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#B9CBD2"
+            android:textSize="10sp"
+            android:text="杭州华塑科技股份有限公司（版权所有©2018-2023）"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#B9CBD2"
+            android:textSize="10sp"
+            android:text="技术支持：(086) 0571-87963507"/>
+    </LinearLayout>
+</LinearLayout>
